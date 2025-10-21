@@ -1,0 +1,79 @@
+/* ≈⁄œ«œ«  ⁄«„… */
+body {
+  font-family: 'Cairo', sans-serif;
+  background: #f4f6fa;
+  color: #222;
+  margin: 0;
+  direction: rtl;
+}
+
+/* —√” «·’›Õ… */
+header {
+  text-align: center;
+  background: #1e90ff;
+  color: white;
+  padding: 40px 20px;
+}
+
+h1 {
+  font-size: 48px;
+  margin: 0;
+  letter-spacing: 2px;
+}
+
+.tagline {
+  margin: 10px 0 20px;
+  font-size: 18px;
+  color: #e0f0ff;
+}
+
+#search {
+  padding: 10px;
+  width: 60%;
+  max-width: 400px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+/* «·„Õ ÊÏ «·—∆Ì”Ì */
+main {
+  padding: 40px 20px;
+}
+
+h2 {
+  color: #1e90ff;
+  margin-bottom: 10px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+/* «·»ÿ«ﬁ«  Ê«·„ﬁ«·«  */
+.card, .article {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card:hover, .article:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* «· –ÌÌ· */
+footer {
+  background: #1e90ff;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+  font-size: 14px;
+}

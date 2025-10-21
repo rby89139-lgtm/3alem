@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>موقع عالِم</title>
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<style>
+body {
+  direction: rtl;
+  text-align: right;
+  font-family: "Tahoma", "Arial", sans-serif;
+}
+</style>
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="author-name" style="text-align:center; font-size:20px; font-weight:bold; margin-top:10px;">
+    محمد ربيع
+</div>
+
+<h1>مرحبًا بكم في موقع عالِم</h1>
+
+<input type="text" id="searchBox" placeholder="ابحث عن موضوع..." onkeyup="searchArticles()" style="width: 80%; padding: 10px; font-size: 18px; border-radius: 10px; border: 1px solid #ccc; margin-bottom: 20px;">
+
+<ul>
+  <li><a href="article/ibnsina.html">ابن سينا</a></li>
+  <li><a href="article/evolution.html">نظرية التطور</a></li>
+  <li><a href="article/pyramids.html">الأهرامات</a></li>
+  <li><a href="article/water.html">الماء</a></li>
+  <li><a href="article/universe.html">الكون والمجرات</a></li>
+  <li><a href="article/light.html">الضوء وأسراره</a></li>
+  <li><a href="article/ai.html">الذكاء الاصطناعي</a></li>
+  <li><a href="article/bigbang.html">الانفجار العظيم</a></li>
+  <li><a href="article/arabic.html">اللغة العربية</a></li>
+  <li><a href="article/electricity.html">الكهرباء</a></li>
+  <li><a href="article/relativity.html">نظرية النسبية</a></li>
+  <li><a href="article/blackholes.html">الثقوب السوداء</a></li>
+  <li><a href="article/emotional-intelligence.html">الذكاء العاطفي</a></li>
+  <li><a href="article/renewable-energy.html">الطاقة المتجددة</a></li>
+  <li><a href="article/space-general.html">الثقافة العامة عن الفضاء</a></li>
+  <li><a href="article/pre-islamic-arabs.html">العرب قبل الإسلام</a></li>
+  <li><a href="article/ancient-egypt-civilizations.html">الحضارات القديمة في مصر</a></li>
+  <li><a href="article/solar-system.html">النظام الشمسي</a></li>
+  <li><a href="article/mesopotamian-civilizations.html">الحضارات القديمة في بلاد الرافدين</a></li>
+  <li><a href="article/ancient-persian-civilizations.html">حضارات بلاد فارس القديمة</a></li>
+  <li><a href="article/ancient-indian-civilizations.html">الحضارات القديمة في الهند</a></li>
+</ul>
+
+<script>
+function searchArticles() {
+  const input = document.getElementById('searchBox').value.toLowerCase();
+  const list = document.querySelectorAll('ul li');
+
+  list.forEach(item => {
+    const text = item.textContent.toLowerCase();
+    if (text.includes(input)) {
+      item.style.display = '';
+    } else {
+      item.style.display = 'none';
+    }
+  });
+}
+</script>
+
+</body>
+</html>
+
